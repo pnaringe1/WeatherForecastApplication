@@ -17,7 +17,6 @@ import javax.inject.Singleton
 
 /**
  * Hilt module providing application-wide dependencies
- * Demonstrates proper Dependency Injection following SOLID principles
  */
 @Module
 @InstallIn(SingletonComponent::class)
@@ -73,7 +72,6 @@ abstract class RepositoryModule {
 
     /**
      * Binds WeatherRepositoryImpl to WeatherRepository interface
-     * Demonstrates Dependency Inversion Principle
      */
     @Binds
     @Singleton

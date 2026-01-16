@@ -11,9 +11,6 @@ enum class WeatherType {
     RAINY,
     CLOUDY;
 
-    /**
-     * Maps weather type to corresponding background drawable resource
-     */
     fun getBackgroundResource(): Int {
         return when (this) {
             SUNNY -> R.drawable.sunny
@@ -23,11 +20,6 @@ enum class WeatherType {
     }
 
     companion object {
-        /**
-         * Maps OpenWeatherMap condition codes to WeatherType
-         * @param condition Main weather condition from API (e.g., "Clear", "Rain", "Clouds")
-         * @return Corresponding WeatherType
-         */
         fun fromCondition(condition: String): WeatherType {
             return when (condition.lowercase()) {
                 "clear" -> SUNNY

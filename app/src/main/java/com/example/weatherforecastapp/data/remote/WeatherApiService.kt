@@ -8,15 +8,7 @@ import retrofit2.http.Query
  * Retrofit API service for OpenWeatherMap
  */
 interface WeatherApiService {
-    
-    /**
-     * Fetches 5-day weather forecast
-     * @param latitude Geographic latitude
-     * @param longitude Geographic longitude
-     * @param apiKey API key for OpenWeatherMap
-     * @param units Temperature unit (metric for Celsius)
-     * @return WeatherResponse containing forecast data
-     */
+
     @GET("forecast")
     suspend fun getForecast(
         @Query("lat") latitude: Double,
