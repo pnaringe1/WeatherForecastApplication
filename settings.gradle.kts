@@ -18,10 +18,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-// Add this plugins block
-plugins {
-    id("io.gitlab.arturbosch.detekt") version "1.23.8" apply false
-}
 
 rootProject.name = "WeatherForecastApp"
 include(":app")

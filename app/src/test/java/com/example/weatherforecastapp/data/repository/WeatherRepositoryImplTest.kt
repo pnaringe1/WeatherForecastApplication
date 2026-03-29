@@ -63,7 +63,7 @@ class WeatherRepositoryImplTest {
     }
 
     @Test
-    fun `when API call fails, should return failure`() = runTest {
+    fun when_API_call_fails() = runTest {
         // Arrange
         val exception = Exception("Network error")
         coEvery { 
